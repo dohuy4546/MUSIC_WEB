@@ -75,18 +75,47 @@
         <!-- phần bên phải -->
       <div class="song_side"></div>
         <!-- Phần bên dưới -->
-      <div class="play_music">
-        <div class="wave">
-          <div class="wave1"></div>
-          <div class="wave1"></div>
-          <div class="wave1"></div>
+      <div class="music_play">
+        <div class="music_left">
+          <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+          </div>
+          <img src="image/img/1.jpg" alt="anh1" id="poster_music">
+          <div class="info_song">
+            <h5 id="title">
+              Em nên dừng lại
+            </h5>
+            <div class="subtitle">Khang Việt</div>
+          </div>
         </div>
-        <img src="image/img/1.jpg" alt="anh1" id="poster_music">
-        <div class="info_song">
-          <h5 id="title">
-            Em nên dừng lại
-          </h5>
-          <div class="subtitle">Khang Việt</div>
+        <div class="music_center">
+          <div class="control">
+            <i class="btn fa-solid fa-arrows-rotate"></i>
+            <i class="btn fa-solid fa-backward-fast"></i>
+            <i class="btn fa-solid fa-play"></i>
+            <i class="btn fa-solid fa-forward-fast"></i>
+            <i class="btn fa-solid fa-shuffle"></i>
+          </div>
+          <div class="progress">
+            <span id="progressStart">0:00</span>
+            <div class="progressSeek">
+              <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+              <div class="seek_bar"></div>
+              <div class="seek_dot"></div>  
+            </div>
+            <span id="progressEnd">6:00</span>
+            <audio id="audio" src="song/audio/1.mp3" preload="metadata"></audio>
+          </div>
+        </div>
+        <div class="music_right">
+          <div class="volume_control">
+            <i class="fa-solid fa-volume-low"></i>
+            <input id="volume" class="volume" type="range" value="30" step="1" min="0" max="100">
+            <div class="seek_bar"></div>
+            <div class="seek_dot"></div>
+          </div>
         </div>
       </div>
     </header>

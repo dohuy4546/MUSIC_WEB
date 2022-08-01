@@ -63,7 +63,7 @@ header .song_side {
     background: #f9dbdb;
 }
 
-header .play_music {
+header .music_play {
     width: 100%;
     height: 10%;
     /* border: 1px solid #fff; */
@@ -167,15 +167,22 @@ header .menu_side h1 {
     font-size: 1rem;
 }
 
-header .play_music {
+header .music_play {
     display: flex;
     align-items: center;
     padding: 0 20px;
     position: fixed;
     bottom: 0;
+    justify-content: space-between;
 }
 
-header .play_music .wave {
+.music_play .music_left {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+header .music_play .music_left .wave {
     width: 30px;
     height: 30px;
     border: 1px solid #000;
@@ -185,7 +192,7 @@ header .play_music .wave {
     margin-right: 1.5rem;
 }
 
-header .play_music .wave .wave1 {
+header .music_play .wave .wave1 {
     width: 3px;
     height: 10px;
     background-color: black;
@@ -194,27 +201,27 @@ header .play_music .wave .wave1 {
     animation: unset
 }
 
-header .play_music .wave .wave1:nth-child(2) {
+header .music_play .wave .wave1:nth-child(2) {
     height: 13px;
     animation-delay: .4s;
 }
 
-header .play_music .wave .wave1:nth-child(3) {
+header .music_play .wave .wave1:nth-child(3) {
     height: 8px;
     animation-delay: .8s;
 }
 
 /* javascript */
-header .play_music .active1 .wave1 {
+header .music_play .active1 .wave1 {
     height: 8px;
     animation-delay: wave .5s linear infinite;
 }
 
-header .play_music .active1 .wave1:nth-child(2) {
+header .music_play .active1 .wave1:nth-child(2) {
     animation-delay: .4s;
 }
 
-header .play_music .active1 .wave1:nth-child(3) {
+header .music_play .active1 .wave1:nth-child(3) {
     animation-delay: .8s;
 }
 
@@ -255,7 +262,7 @@ header .play_music .active1 .wave1:nth-child(3) {
     animation: heartBeat 1s linear infinite;
 }
 
-.play_music .info_song {
+.music_play .info_song {
     width: 10rem;
     margin-left: 1.5rem;
     overflow: hidden;
@@ -263,7 +270,7 @@ header .play_music .active1 .wave1:nth-child(3) {
     white-space: nowrap;
 }
 
-.play_music .info_song h5 {
+.music_play .info_song h5 {
     line-height: 1.6;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -281,11 +288,42 @@ header .play_music .active1 .wave1:nth-child(3) {
     }
 }
 
-.play_music .info_song .subtitle {
+.music_left .info_song .subtitle {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
+}
+
+.music_center .control {
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* outline: none; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music_center {
+    width: 60%;
+}
+
+.music_center .control .btn {
+    margin: 0px 16px;
+}
+
+.music_center .progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music_center .progress .progressSeek {
+    width: 70%;
+}
+
+.music_center .progress {
+    width: 100%;
 }
