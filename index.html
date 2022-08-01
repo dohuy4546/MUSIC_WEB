@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css1.css" />
+    <link rel="stylesheet" href="css/css1.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
@@ -20,26 +20,77 @@
     <header>
         <!-- Phần bên trái -->
       <div class="menu_side">
-        <a href="#" class="name">
-            <img src="image/logo.jpg" alt="logo" class="logo"></img>
-            <h1>MYZIC</h1>
-        </a>
-        <div class="play_list">
-            <a href="#" class="active animate__animated animate__fadeInDown"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#" class="animate__animated animate__fadeInDown"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
-            <a href="#" class="animate__animated animate__fadeInDown"><i class="fa-solid fa-compact-disc"></i> Your Library</a>
+        <div class="top">
+          <a href="#" class="name">
+              <img src="image/logo.jpg" alt="logo" class="logo"></img>
+              <h1>MYZIC</h1>
+          </a>
+          <div class="menu">
+              <a href="#" class="active animate__animated animate__fadeInDown"><i class="fa-solid fa-house"></i> Home</a>
+              <a href="#" class="animate__animated animate__fadeInDown"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+              <a href="#" class="animate__animated animate__fadeInDown"><i class="fa-solid fa-compact-disc"></i> Your Library</a>
+          </div>
         </div>
-        <ul class="menu_song">
+        <div class="bottom">
+          <ul class="menu_song">
             <li class="songItem">
-                
+                <span>01</span>
+                <img src="image/img/1.jpg" alt="anh1">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
             </li>
-        </ul>
+            <li class="songItem">
+                <span>01</span>
+                <img src="" alt="">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
+            </li>
+            <li class="songItem">
+                <span>01</span>
+                <img src="" alt="">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
+            </li>
+            <li class="songItem">
+                <span>01</span>
+                <img src="" alt="">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
+            </li>
+            <li class="songItem">
+                <span>01</span>
+                <img src="" alt="">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
+            </li>
+            <li class="songItem">
+                <span>01</span>
+                <img src="" alt="">
+                <h5>Ten bai hat<br><p class="subtitle">ca si</p></h5>
+                <i class="fa-solid fa-circle-play"></i>
+            </li>
+          </ul>
+        </div>
       </div> 
         <!-- phần bên phải -->
       <div class="song_side"></div>
         <!-- Phần bên dưới -->
-      <div class="master_play"></div>
+      <div class="play_music">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <img src="image/img/1.jpg" alt="anh1" id="poster_music">
+        <div class="info_song">
+          <h5 id="title">
+            Em nên dừng lại
+          </h5>
+          <div class="subtitle">Khang Việt</div>
+        </div>
+      </div>
     </header>
     <script src="js1.js"></script>
   </body>
 </html>
+<!-- class="animate__animated animate__heartBeat" -->
